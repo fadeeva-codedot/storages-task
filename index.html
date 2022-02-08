@@ -1,0 +1,56 @@
+<!--добавление, удаление, изменение, вывод, общение между окнами-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Storages</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="localstorage__interface">
+			<div class="localstorage__interface-inputs">
+				<input
+					type="text"
+					class="localstorage__input"
+					id="key"
+					placeholder="key"
+				/>
+				<input
+					type="text"
+					class="localstorage__input"
+					id="value"
+					placeholder="value"
+				/>
+			</div>
+			<div class="localstorage__interface-buttons">
+				<button type="button" class="localstorage__add" id="ls-add">
+					Add elem
+				</button>
+				<button
+					type="button"
+					class="localstorage__remove"
+					id="ls-remove"
+				>
+					Delete elem
+				</button>
+				<button
+					type="button"
+					class="localstorage__change"
+					id="ls-change"
+				>
+					Change elem
+				</button>
+
+				<button type="button" class="localstorage__clear" id="ls-clear">
+					Clear localstorage
+				</button>
+			</div>
+			<ul class="localstorage__elements"></ul>
+		</div>
+
+		<!--<div class="cookies__interface"></div>-->
+		<script src="./localstorage.js"></script>
+	</body>
+</html>
