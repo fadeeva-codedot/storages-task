@@ -13,6 +13,8 @@ const lsRender = () => {
 const lsAdd = () => {
 	localStorage.setItem(lsKey.value, lsValue.value)
 	lsRender()
+	lsKey.value = ''
+	lsValue.value = ''
 }
 
 const lsRemove = () => {
