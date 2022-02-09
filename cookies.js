@@ -2,6 +2,8 @@ const cookieKey = document.querySelector('#cookie-key')
 const cookieValue = document.querySelector('#cookie-value')
 const cookieList = document.querySelector('#cookie-elements')
 
+let lastState = 0
+
 const cookieRender = () => {
 	cookieList.innerHTML = ''
 	document.cookie.split(';').forEach((el) => {
@@ -54,6 +56,17 @@ const cookieClear = () => {
 
 	cookieRender()
 }
+
+const cookieSync = () => {
+	const t = document.cookie
+	if (t != lastState) {
+		lastState = t
+		cookieRender()
+	}
+	window.setTimeout(cookieSync, 500)
+}
+
+cookieSync()
 
 document.querySelector('#cookie-add').addEventListener('click', cookieAdd)
 document.querySelector('#cookie-remove').addEventListener('click', cookieRemove)
