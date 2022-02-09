@@ -37,11 +37,11 @@ button:focus-visible {
 	outline: none;
 }
 
-.localstorage__header {
+.header {
 	text-align: center;
 }
 
-.localstorage__interface {
+.interface {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
@@ -53,8 +53,8 @@ button:focus-visible {
 	border-radius: 20px;
 }
 
-.localstorage__interface-inputs,
-.localstorage__interface-buttons {
+.interface-inputs,
+.interface-buttons {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -62,18 +62,18 @@ button:focus-visible {
 	gap: 15px;
 }
 
-.localstorage__add {
+.add {
 	background-color: #98d470;
 }
 
-.localstorage__remove {
+.remove {
 	background-color: #ee9292;
 }
 
-.localstorage__change {
+.change {
 	background-color: #e69f68;
 }
 
-.localstorage__clear {
+.clear {
 	background-color: #8ec7d4;
 }

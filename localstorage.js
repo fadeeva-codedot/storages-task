@@ -1,6 +1,6 @@
-const lsKey = document.querySelector('#key')
-const lsValue = document.querySelector('#value')
-const lsList = document.querySelector('.localstorage__elements')
+const lsKey = document.querySelector('#ls-key')
+const lsValue = document.querySelector('#ls-value')
+const lsList = document.querySelector('#ls-elements')
 
 const lsRender = () => {
 	let keys = Object.keys(localStorage)
