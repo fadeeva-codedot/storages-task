@@ -8,13 +8,14 @@ const lsRender = () => {
 	for (let key of keys) {
 		lsList.innerHTML += `<li>${key}: ${localStorage.getItem(key)}</li>`
 	}
+
+	lsKey.value = ''
+	lsValue.value = ''
 }
 
 const lsAdd = () => {
 	localStorage.setItem(lsKey.value, lsValue.value)
 	lsRender()
-	lsKey.value = ''
-	lsValue.value = ''
 }
 
 const lsRemove = () => {
