@@ -1,0 +1,79 @@
+body,
+input,
+button,
+ul {
+	font-family: 'Trebuchet MS';
+	font-size: 16px;
+}
+
+ul {
+	margin: 0;
+}
+
+button {
+	padding: 10px;
+	border-radius: 10px;
+	border-color: transparent;
+}
+
+input {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-color: transparent transparent black transparent;
+	width: 200px;
+	background-color: transparent;
+}
+
+input:focus-visible {
+	outline: none;
+	background-color: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:focus-visible {
+	outline: none;
+}
+
+.localstorage__header {
+	text-align: center;
+}
+
+.localstorage__interface {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+	gap: 25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #d6d6d6;
+	border-radius: 20px;
+}
+
+.localstorage__interface-inputs,
+.localstorage__interface-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.localstorage__add {
+	background-color: #98d470;
+}
+
+.localstorage__remove {
+	background-color: #ee9292;
+}
+
+.localstorage__change {
+	background-color: #e69f68;
+}
+
+.localstorage__clear {
+	background-color: #8ec7d4;
+}
