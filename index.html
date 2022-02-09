@@ -9,38 +9,74 @@
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<h3 class="header">Local Storage</h3>
-		<div class="interface">
-			<div class="interface-inputs">
-				<input
-					type="text"
-					class="input"
-					id="ls-key"
-					placeholder="key"
-				/>
-				<input
-					type="text"
-					class="input"
-					id="ls-value"
-					placeholder="value"
-				/>
-			</div>
-			<div class="interface-buttons">
-				<button type="button" class="add" id="ls-add">
-					Add element
-				</button>
-				<button type="button" class="remove" id="ls-remove">
-					Delete element
-				</button>
-				<button type="button" class="change" id="ls-change">
-					Change element
-				</button>
+		<div class="wrapper">
+			<div class="interface">
+				<h3 class="header">Local Storage</h3>
+				<div class="interface-inputs">
+					<input
+						type="text"
+						class="input"
+						id="ls-key"
+						placeholder="key"
+					/>
+					<input
+						type="text"
+						class="input"
+						id="ls-value"
+						placeholder="value"
+					/>
+				</div>
+				<div class="interface-buttons">
+					<button type="button" class="add" id="ls-add">
+						Add element
+					</button>
+					<button type="button" class="remove" id="ls-remove">
+						Delete element
+					</button>
+					<button type="button" class="change" id="ls-change">
+						Change element
+					</button>
 
-				<button type="button" class="clear" id="ls-clear">
-					Clear localstorage
-				</button>
+					<button type="button" class="clear" id="ls-clear">
+						Clear localstorage
+					</button>
+				</div>
+				<ul class="elements" id="ls-elements"></ul>
 			</div>
-			<ul class="elements" id="ls-elements"></ul>
+
+			<div class="interface">
+				<h3 class="header">Cookies</h3>
+				<div class="interface-inputs">
+					<input
+						type="text"
+						class="input"
+						id="cookie-key"
+						placeholder="key"
+					/>
+					<input
+						type="text"
+						class="input"
+						id="cookie-value"
+						placeholder="value"
+					/>
+				</div>
+				<div class="interface-buttons">
+					<button type="button" class="add" id="cookie-add">
+						Add element
+					</button>
+					<button type="button" class="remove" id="cookie-remove">
+						Delete element
+					</button>
+					<button type="button" class="change" id="cookie-change">
+						Change element
+					</button>
+
+					<button type="button" class="clear" id="cookie-clear">
+						Clear cookies
+					</button>
+				</div>
+				<ul class="elements" id="cookie-elements"></ul>
+			</div>
 		</div>
 
 		<script src="./localstorage.js"></script>
